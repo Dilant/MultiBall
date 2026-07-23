@@ -439,7 +439,11 @@ class MultiBallManager extends Manager
     nextBall.status = playerStatus;
     nextBall.switch(
       playerBallType,
-      `Multi${playerBallType}${playerBallType === "StickyBall" && playerStatus.power === 0 ? "OOP" : ""}${this.skinSuffix}`,
+      `Multi${playerBallType}${
+      playerBallType === "StickyBall" && playerStatus.power === 0 ?
+      "OOP" :
+      ""}${
+      this.skinSuffix}`,
       [
       playerPos,
       playerRot,

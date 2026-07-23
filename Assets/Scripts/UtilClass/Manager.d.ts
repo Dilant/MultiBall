@@ -4,6 +4,10 @@ import type CustomKey from "Scripts/UtilClass/CustomKeyClass.js";
 import type { AssertNonNegInt } from "utils";
 /** A type that gets the events of a manager. */
 export type ManagerEvents<M extends Manager<any, any, any>> = M extends Manager<infer E, any, any> ? E : never;
+/** A type that gets the tip key of a manager. */
+export type ManagerTipKey<M extends Manager<any, any, any>> = M extends Manager<any, infer T, any> ? T : never;
+/** A type that gets the custom key name of a manager. */
+export type ManagerCustomKeyName<M extends Manager<any, any, any>> = M extends Manager<any, any, infer K> ? K : never;
 export type OnCustomEvents<M extends Manager<any, any, any>> = (self: Item, events: ManagerEvents<M>) => void;
 export type E = BuiltinEvents & {
     /** A manager should never receive custom events. */

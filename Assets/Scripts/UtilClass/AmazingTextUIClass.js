@@ -3,8 +3,8 @@ import {
   uiCanvas,
   inputManager,
   tweenManager,
-
   ColorRGBA } from
+
 "gameApi";
 
 export default class AmazingTextUI {

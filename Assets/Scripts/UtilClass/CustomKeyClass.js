@@ -337,8 +337,6 @@ export default class CustomKey {
   }
 
 
-
-
   update() {
     if (this.ui.duringConfig) {
       for (const key of [

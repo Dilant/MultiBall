@@ -115,8 +115,6 @@ export default class AmazingTextUI {
   }
 
 
-
-
   hide() {
     if (!this.ui.enabled) return;
     if (this.duringAnimation) return;

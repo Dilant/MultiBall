@@ -50,8 +50,6 @@ class MultiBallManager extends Manager
 
 
 
-
-
   cameraEase = null;
 
 
@@ -132,21 +130,13 @@ class MultiBallManager extends Manager
 
 
 
-
-
   allowSameBallType = false;
-
-
 
 
   balls = [player];
 
 
-
-
   platformTrans = [];
-
-
 
 
   get currentIndex() {
@@ -154,20 +144,14 @@ class MultiBallManager extends Manager
   }
 
 
-
-
   get nextIndex() {
     return (this.currentIndex + 1) % this.balls.length;
   }
 
 
-
-
   get nextBall() {
     return this.balls[this.nextIndex];
   }
-
-
 
 
   get previousIndex() {
@@ -353,7 +337,7 @@ class MultiBallManager extends Manager
       0,
       0,
       "Linear",
-      125,
+      140,
       () => {
         Object.assign(player, {
           durability,

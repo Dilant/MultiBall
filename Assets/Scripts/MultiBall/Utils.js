@@ -12,8 +12,7 @@ export const defaultStatus = {
   scale: 1
 };
 
-export const isPlayer = (obj) =>
-"guid" in obj;
+export const isPlayer = (obj) => "guid" in obj;
 
 export const getStatusFromPlayer = () => ({
   durability: player.durability,

@@ -32,8 +32,6 @@ const getColor = (durability) => {
 };
 
 
-
-
 export class Avatar {
   ui;
 
@@ -97,8 +95,6 @@ export class Avatar {
     bar.anchorMax = new Float2(durability / 100, 0.1);
     bar.color = getColor(durability);
   }
-
-
 
 
   destroy() {
